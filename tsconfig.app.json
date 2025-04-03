@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Cible ECMAScript 2020
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Bibliothèques incluses
+    "module": "ESNext", // Utilisation des modules ESNext
+    "skipLibCheck": true, // Ignorer la vérification des fichiers de déclaration
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true, // Permettre l'importation d'extensions TypeScript
+    "isolatedModules": true, // Assurer la compatibilité avec les modules isolés
+    "moduleDetection": "force", // Forcer la détection des modules
+    "noEmit": true, // Ne pas émettre de fichiers JavaScript
+    "jsx": "react-jsx", // Utiliser la transformation JSX de React
+
+    /* Linting */
+    "strict": true, // Activer toutes les vérifications strictes
+    "noUnusedLocals": true, // Signaler les variables locales non utilisées
+    "noUnusedParameters": true, // Signaler les paramètres non utilisés
+    "noFallthroughCasesInSwitch": true, // Signaler les cas de switch sans break
+
+    /* Options supplémentaires pour React et TypeScript */
+    "esModuleInterop": true, // Permettre l'interopérabilité des modules CommonJS/ES
+    "allowSyntheticDefaultImports": true, // Permettre les imports par défaut synthétiques
+    "resolveJsonModule": true, // Permettre l'importation de fichiers JSON
+    "forceConsistentCasingInFileNames": true // Forcer la cohérence de la casse dans les noms de fichiers
+  },
+  "include": ["src"] // Inclure tous les fichiers dans le dossier src
+}
